@@ -171,6 +171,7 @@
     }
     .experience-card {
         width: 100%;
+        height: auto;
         padding: 1.5rem;
         margin-bottom: 1.5rem;
     }
@@ -188,7 +189,7 @@
     .experience-card {
         padding: 1rem;
         margin-bottom: 1.5rem;
-        height: 130px;
+        height: auto;
     }
     .expcard-img {
         border-radius: 50%;
@@ -221,6 +222,28 @@
         font-size: 2.5rem;
     }
 }
+
+@media (max-width: 768px) {
+    .company-line h6 {
+        position: relative;
+        margin-left: auto;
+      }
+
+      .experience-card {
+        width: auto;
+        height: auto;
+        text-overflow: ellipsis;
+    }
+
+    .title-line, .company-line {
+        flex-direction: column; /* Stack job title, company, date, and location on mobile */
+        align-items: flex-start; 
+    }
+    .experience-dates, .experience-location {
+        margin-top: 0.5rem;
+        align-self: flex-end;
+    }
+  }
 
 @media screen and (max-width: 400px) {
 

@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            I graduated student from Northeastern University where I pursued my MS in Information Systems. I also hold a Bachelor's degree in Computer Engineering.
+            I graduated from Northeastern University where I pursued my MS in Information Systems. I also hold a Bachelor's degree in Computer Engineering.
             {/* <br/> */}
             Over the years, I’ve had the opportunity to work on exciting projects in web development, cloud infrastructure, and automation, and I thrive on the constant learning that comes with it. 
             {/* <br/> */}

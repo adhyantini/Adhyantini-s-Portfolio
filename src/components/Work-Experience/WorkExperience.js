@@ -1,7 +1,7 @@
 import React,{useContext} from 'react';
 
 
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import './Experience.css';
 import ExperienceCard from './ExperienceCard';
@@ -12,10 +12,13 @@ function Experience() {
     return (
       <Container fluid className="project-section">
       <Particle />
+      <Container>
       <h1 className="project-heading"> Work <strong className="purple"> Experience </strong> </h1>
-        <div className="experience" id="experience" style={{backgroundColor: "a24dd386"}}> 
-             <div className="experience-body">
+      <Row  style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        {/* <div className="experience" id="experience" style={{backgroundColor: "a24dd386"}}>  */}
+             {/* <div className="experience-body"> */}
                  <div className="experience-description">
+                 <Col md={12} style={{paddingTop: "30px", paddingBottom: "50px",}}>
                         <ExperienceCard 
                             key="1"
                             id="1"
@@ -31,7 +34,8 @@ function Experience() {
                                 Led troubleshooting and performance optimisation of Oracle SQL queries, enhancing system efficiency by 25%.
                                 Utilised Agile methodologies for timely and efficient software releases; maintained code quality via code review processes.`}
                             />
-
+                            </Col>
+                <Col md={12} style={{paddingTop: "30px", paddingBottom: "50px",}}>
                         <ExperienceCard 
                             key="2"
                             id="2"
@@ -47,10 +51,13 @@ function Experience() {
                                            Engaged in project enhancements using Node.js, improving functionality and user experience by 15%
                                            Implemented CI/CD pipelines using Jenkins and Git on IBM Cloud & OpenShift, increasing deployment efficiency by 30%`}
                             />
+                            </Col>
                   
                  </div>
-             </div>
-        </div>
+             {/* </div> */}
+        {/* </div> */}
+        </Row>
+        </Container>
         </Container>
     )
 }
