@@ -225,23 +225,32 @@
 
 @media (max-width: 768px) {
     .company-line h6 {
-        position: relative;
-        margin-left: auto;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:10px;
       }
+
+      .title-line, .company-line{
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Ensure the alignment is correct */
+        width: 100%; /* Full width */
+    }
+    
+
+    .title-line h6{
+        /* position: relative; */
+        display: none;
+       
+    }
+
+    /* .title-line h4 {
+        display: block;
+    } */
 
       .experience-card {
         width: auto;
         height: auto;
-        text-overflow: ellipsis;
-    }
-
-    .title-line, .company-line {
-        flex-direction: column; /* Stack job title, company, date, and location on mobile */
-        align-items: flex-start; 
-    }
-    .experience-dates, .experience-location {
-        margin-top: 0.5rem;
-        align-self: flex-end;
     }
   }
 
